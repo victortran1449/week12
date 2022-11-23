@@ -20,3 +20,9 @@ const changeText = () => {
   }
 };
 clickMeButton.addEventListener("click", changeText);
+
+const updateImage = () => {
+    const image = document.querySelector("#shoppingCart")
+    image.setAttribute("src", "images/shoppingcart.png")
+}
+clickMeButton.addEventListener("click", updateImage)
