@@ -3,6 +3,8 @@ const clickMeButton = document.querySelector(".click-me")
 
 const clickHandler = () => {
     alert("You clicked me!")
+    // clickMeButton.removeEventListener("click", clickHandler)
 }
 
-clickMeButton.addEventListener("click", clickHandler)
+clickMeButton.addEventListener("click", clickHandler, {once:true})
+
